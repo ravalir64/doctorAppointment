@@ -1,0 +1,351 @@
+<h1 style="margin-top: 40px;">This is doctor detail view</h1>
+<div class="col-md-12 outerdiv  border-shadow " style="border:1px solid red; min-height:1000px; width:1300px;">
+
+
+    <div class="col-md-12 left border-shadow " style="border:1px solid green; min-height:1000px; width:975px;">
+
+        <div class="row right border-shadow " style="border:1px solid blue; min-height:200px; width:964px;">
+
+
+            <!--<div class=" outerdiv col-md-12" style="border:1px solid red; min-height:500px;">-->
+            <div class=" col-md-12 border-shadow">
+                <div class="row unordered">
+                    <div class="col-md-2 ">
+                        <img class="img-circle" ng-src="{{vm.doctor.doc_logo}}" alt="Smiley face" height=" 150" width="150">
+                    </div>
+                    <div class="col-md-5">
+                        <ul>
+                            <li>
+                                <h3>{{vm.doctor.doc_name}}</h3>
+                            </li>
+                            <li>{{vm.doctor.spec_name_doc}} </li>
+                            <li style="opacity:0.6">{{vm.doctor.qualification}} </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <ul>
+                            <li><span class="fa fa-medkit text-left "></span>{{vm.doctor.experience}} </li>
+                            <li><span class="fa fa-hospital-o "></span>{{vm.doctor.hospital}} </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row  " style="border:1px solid #eae5e5;border-bottom:0px;margin-bottom:-19px;">
+                    <div class="col-md-4 text-center" style="border:1px solid #eae5e5;border-bottom:0px; background-color:#8FB512;">
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#recommendDoctor">Recommend the doctor </button>
+                    </div>
+                    <div class="col-md-4 text-center" style="border:1px solid #eae5e5;border-bottom:0px; background-color:#8FB512;">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#sendEnquiry">Send Enquiry </button>
+
+                    </div>
+                    <div class="col-md-4 text-center " style="border:1px solid #eae5e5;border-bottom:0px; background-color:#8FB512;">
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#callforAppointment">call for appointment </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row border-shadow" style="border:1px solid orange; min-height:500px; width:965px;" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+            <div class="col-md-5 border-shadow " style="border:1px solid red; min-height:500px; width:194px;">
+                <nav class="col-sm-3" id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a data-target="#overview-about">About</a></li>
+                        <li><a data-target="#Specialities">Specialities</a></li>
+                        <li><a data-target="#Expertise">Expertise</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#Education">Education <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-target="#PracticeInformation">Practice Information</a></li>
+                                <li><a data-target="#Achievementscontributions">Achievements & Contributions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-5 border-shadow " style="border:1px solid green;min-height:500px; width:768px;">
+                <div class=" tick col-md-12 border-shadow">
+                    <div id="overview-about" itemprop="description" class="">
+                        <!--<div>Dr. Devi Prasad Shetty is a name that is spoken of with reverence and respect in the field of cardiology. He is one of the leading heart specialists in the country who has been recognized as one of the top cardiac surgeons in the
+                            world.
+                        </div>
+                        <div><br></div>
+                        <div>The world-renowned cardiac surgeon, who has more than 25 years of experience, in the field of cardiac surgery has the distinction of performing a number of surgeries. Dr. Shetty and his team have performed over 70,000 major heart
+                            surgeries, out of which 15,000 surgeries were on children alone, many of them new born babies.</div>
+                        <div><br></div>
+                        <div>Dr. Shetty has founded the world-famous and prestigious Narayana Hrudayalaya in Bangalore – a unique hospital completely devoted to heart care. He, later founded the Rabindranath Tagore International Institute of Cardiac Sciences
+                            (RTIICS) in Kolkata. Dr. Shetty is the Executive Chairman and Managing Director of Narayana Hrudayalaya Private Limited.</div>
+                        <div><span style="font-weight: bold;"><br></span></div>
+                        <div><span style="font-weight: bold;">Dr. Devi Prasad Shetty's specializations encompass the following areas:</span></div>
+                        <div>
+                            <ul class="list-square">
+                                <li><span style="line-height: 1.5; background-color: initial;">Cardiothoracic Surgery</span><br></li>
+                                <li><span style="line-height: 1.5; background-color: initial;">Cardiovascular Surgery</span><br></li>
+                                <li><span style="line-height: 1.5; background-color: initial;">Pediatric Cardiac Surgery</span><br></li>
+                            </ul>
+                        </div>
+                        <div>Moreover, Dr. Shetty is a renowned expert in pediatric cardiac surgeries.</div>
+                        <div>Dr. Shetty entered the world of medicine after he did his MBBS from the Kasturba Medical College, Mangalore. He, then did MS (General Surgery) from the same institution. He trained in Cardiac Surgery at the West Midlands Cardio-Thoracic
+                            Rotation Program in Walsgrave Hospital, Coventry and East Birmingham Hospital, Birmingham, UK. He, later worked at the Cardio-Thoracic unit in Guys Hospital, London from 1983 to 1989.</div>
+                        <div><span style="font-weight: bold;"><br></span></div>
+                        <div><span style="font-weight: bold;">Dr. Devi Prasad Shetty has made immense contributions to the field of cardiac surgery, some of which are:</span></div>
+                        <div>
+                            <ul class="list-square">
+                                <li><span style="line-height: 1.5; background-color: initial;">He is the first cardiac surgeon in India to perform heart surgeries on newborn babies, using a Microchip camera to close holes in the heart.</span><br></li>
+                                <li><span style="line-height: 1.5; background-color: initial;">He has pioneered operations for complex problems of the heart, such as Pulmonary Endarterectomy, Redo heart surgery, Aortic Aneurysm surgeries, and valve repairs in newborn babies.</span><br></li>
+                            </ul>
+                        </div>
+                        <div><span style="font-weight: bold;"><br></span></div>
+                        <div><span style="font-weight: bold;">He has made the following contributions to the field of medicine:</span></div>
+                        <div>
+                            <ul class="list-square">
+                                <li><span style="line-height: 1.5; background-color: initial;">He is the first in the world to coin the term Micro Health Insurance</span><br></li>
+                                <li><span style="line-height: 1.5; background-color: initial;">He has helped the Karnataka state government to launch Yeshashwini Micro Health Insurance, considered as the largest Micro Health Insurance program in the world.</span></li>
+                                <li><span style="line-height: 1.5; background-color: initial;">He has coined the term “Health City” and he is in the process of creating 5000-bed Health cities in every state capital of India</span></li>
+                                <li><span style="line-height: 1.5; background-color: initial;">His team manages the world’s largest Telemedicine program through the Indian Space Research Organization (ISRO).</span></li>
+                            </ul>
+                        </div>
+                        <div>Dr. Shetty and his team are committed to their mission to make healthcare affordable to the masses living in third world countries.</div>
+                    </div>-->
+                        <div>
+                            {{vm.doctor.info}}
+                        </div>
+                    </div>
+
+
+                    <div class=" tick col-md-12 border-shadow" id="Specialities">
+
+                        <h3>Specialities</h3>
+                        <ul style="columns:2;">
+                            {{vm.doctor.spec_name_doc}}
+                            <!--<li>
+                                <span class="specs">Cardiothoracic Surgery</span>
+                            </li>
+                            <li>
+                                <span class="specs">Cardiovascular Surgery</span>
+                            </li>
+                            <li>
+                                <span class="specs">Pediatric Cardiac Surgery</span>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class=" tick col-md-12 border-shadow" id="Expertise">
+                        <h3>Expertise</h3>
+                        <ul>
+                            {{vm.doctor.Expertise}}
+                            <!--<li>Pediatric Cardiac Surgeries</li>-->
+
+                        </ul>
+                    </div>
+
+                    <div class=" tick col-md-12 border-shadow" id="Education">
+                        <h3>Education</h3>
+                        <ul>
+                            {{vm.doctor.qualification}}
+                            <!--<li>MBBS from Kasturba Medical College, Mangalore</li>
+                            <li>MS (General Surgery) from Kasturba Medical College, Mangalore</li>
+                            <li>Trained in Cardiac Surgery at West Midlands Cardio-Thoracic Rotation Program between Walsgrave Hospital, Coventry and East Birmingham Hospital, Birmingham followed by appointment at Cardio-Thoracic unit, Guys Hospital, London
+                                from 1983 to 1989
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class=" col-md-12 border-shadow" id="PracticeInformation">
+
+                        <h3>Practice Information</h3>
+                        {{vm.doctor.PatienceExperience}}
+                        <!--<div class="row" style="border:1px solid lime; width: 349px;
+    height: 194px; background: lightgrey; margin-left: -1px;
+    margin-bottom: 20px; padding-top: 10px;">
+                            <div class="row" style="border:1px solid red; background:white;">
+                                <img src="images/yeoman.png" alt="Smiley face" height="42" width="86" float="left">
+                            </div>
+                            <div class="col-md-8" style="border:1px solid yellow;margin-bottom: 1px;">
+                                <h4>Narayana Institute of Cardiac Sciences, </h4>
+                                <h5>Bangalore</h5>
+                                <h6>No.258/a, Bommasandra Industrial Area, Hosur Road, Anekal Taluk, Bangalore, Karnataka - 560099</h6>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg btn-block ">call for appointment</button>
+                        </div>
+
+                    </div>-->
+                        <div class=" col-md-12 border-shadow" id="PatientExperience">
+
+                            <h3>Patient Experience</h3>
+                            {{vm.doctor.PatienceExperience}}
+                            <!--<div class="col-md-12" style="padding:0px; min-height:70px;  margin-bottom:20px; padding-top: 20px;">
+                                <div class=" col-md-2 " style="padding:0px;min-height:60px;padding-left: 35px; padding-top: 20px; padding-bottom:20px; ">
+                                    <button type="button" class="btn btn-primary">Take a survey </button>
+                                </div>
+                                <div class="col-md-10 " style="padding:0px;min-height:60px;padding-left: 35px; padding-top:20px; padding-bottom: 20px; ">
+                                    Your participation in the survey will help other patients make informed decisions. You will also be helping Dr. Devi Prasad Shetty and his staff know how they are doing and how they can improve their services.
+                                </div>
+                            </div>-->
+
+                        </div>
+                        <div class=" col-md-12 border-shadow " id="Achievementscontributions">
+                            <h3>Achievements & Contributions</h3>
+                            <button class="accordion ">Section 1</button>
+                            <div class="panel ">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                            </div>
+
+                            <button class="accordion ">Section 2</button>
+                            <div class="panel ">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                            </div>
+
+                            <button class="accordion ">Section 3</button>
+                            <div class="panel ">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="row border-shadow " style="border:1px solid blue; min-height:1000px; min-width:650px;">
+
+                <div class="col-md-4 border-shadow " style="border:1px solid green; min-height:75px; width:300px; padding-left:0px; padding-right:0px;">
+                    <img class="img-responsive" src="images/img 7.jpg">
+                </div>
+                <div class="col-md-4 border-shadow " style="border:1px solid  yellow; min-height:600px; width:300px;">
+                    <h4>Most Viewed Cardiothoracic Surgeons </h4>
+
+                    <div class="doctorcomponent row  " ng-repeat="doctor in vm.doctorlist ">
+
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-circle" src="images/yeoman.png" alt="Smiley face" height=" 75" width="75">
+                                </div>
+
+                                <div class="col-md-8">
+                                    <ul class="doc-name">
+                                        <li>
+                                            <h3 class="doc">{{doctor.doc_name}}</h3>
+                                        </li>
+                                        <li>{{doctor.spec_name_doc}}</li>
+                                        <li style="opacity:0.6">{{doctor.qualification}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-4 border-shadow " style="border:1px solid red; min-height:182px; width:300px;">
+                    <h4 class="text-center">Ask a Doctor</h4>
+
+                    <h5 class="text-center">Get an answer immediately from board certified doctors.</h5>
+                    <textarea rows="5 " cols="35 " class="field " placeholder="Type your detailed question... "></textarea>
+                    <div>
+                        <button class="btn btn-success btn-lg getbutton "> Get Answer </button>
+                        <h5 class="text "> Private, secure and 100% trusted </h5>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="modal fade" id="recommendDoctor" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Message</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please login to recommend this doctor!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Login</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="sendEnquiry" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Send Enquiry</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        Name*<br>
+                        <input type="text" name="firstname"><br> Phone*
+                        <br>
+                        <input type="text" name="lastname"> Email*
+                        <br>
+                        <input type="text" name="firstname"><br> Additional Details*
+                        <br>
+                        <input type="text" name="lastname">
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="callforAppointment" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                    <h4 class="modal-title text-center">Call For Appointment</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title text-center">When you call, don't forget to mention that you found this on Sehat.com</h4>
+                    <img class="img-square" src="images/yeoman.png" alt="Smiley face" height=" 150" width="150">
+                    <ul class="doc-name">
+                        <li>
+                            <h3 class="doc">Doctor name</h3>
+                        </li>
+                        <li> Doctor speacility</li>
+                        <li style="opacity:0.6">qualification</li>
+                    </ul>
+                    <!--<p>Some text in the modal.</p>-->
+                </div>
+                <div class="modal-footer buttonsec ">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">GET Sms</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">GET Email</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Report Error</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>

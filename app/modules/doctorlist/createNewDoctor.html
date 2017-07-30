@@ -1,0 +1,111 @@
+<h1>This is createNewDoctorCtrl</h1>
+<h2 class="text-center">Registration Form</h2>
+
+<form class="DoctorNewForm">
+    <div class="col-md-12 " style="border:1px solid blue;width: 1259px; padding-left: 269px; padding-right: 153px;     padding-bottom: 100px;">
+        <div class="col-md-6 border-shadow" style="border:1px solid red; padding-left: 30px;
+    padding-right: 30px; margin-top: 40px;
+    margin-bottom: 50px; padding-top: 20px;
+    padding-bottom: 20px;">
+            <div class="form-group">
+                <label for="formGroupExampleInput">Doctor Name</label>
+                <input type="text" ng-model="vm.doctor.doc_name" class="form-control mx-sm-3" id="formGroupExampleInput" placeholder="Example input">
+                <label class="custom-control custom-radio">
+  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">MR</span>
+</label>
+                <label class="custom-control custom-radio">
+  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">MRS</span>
+</label>
+                <label class="custom-control custom-radio">
+  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">MISS</span>
+</label>
+                <select ng-model="vm.doctor.gender" class="custom-select">
+  <option selected>Gender</option>
+  <option value="1">Male</option>
+  <option value="2">Female</option>
+ 
+</select>
+            </div>
+            <div class="form-group">
+                <label for="exampleTextarea">Information</label>
+                <textarea ng-model="vm.doctor.info" class="form-control" id="exampleTextarea" rows="3"></textarea>
+                <!--<label for="formGroupExampleInput2">Information</label>
+                <input type="text" ng-model="vm.doctor.info" class="form-control" id="formGroupExampleInput2" placeholder="Another input">-->
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Active</label>
+                <input type="text" ng-model="vm.doctor.active" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Doctor logo</label>
+                <input type="text" ng-model="vm.doctor.doc_logo" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">link</label>
+                <input type="text" ng-model="vm.doctor.link" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Qualification</label>
+                <input type="text" ng-model="vm.doctor.qualification" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+        </div>
+        <div class="col-md-6 border-shadow" style="border:1px solid green; padding-left: 30px;
+    padding-right: 30px; margin-top: 40px;
+    margin-bottom: 50px; padding-top: 20px;
+    padding-bottom: 20px;">
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Expertise</label>
+                <textarea ng-model="vm.doctor.Expertise" class="form-control" id="exampleTextarea" rows="3"></textarea>
+                <!--<input type="text" ng-model="vm.doctor.gender" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                -->
+
+
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Specialities</label>
+                <input type="text" ng-model="vm.doctor.spec_name_doc" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Location</label>
+                <input type="text" ng-model="vm.doctor.location" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Experience</label>
+                <input type="text" ng-model="vm.doctor.experience" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div>
+                <label for="formGroupExampleInput2">Patience Experience</label>
+                <textarea ng-model="vm.doctor.PatienceExperience" class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Hospital</label>
+                <input type="text" ng-model="vm.doctor.hospital" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                <label for="formGroupExampleInput2">Hospital Address</label>
+                <textarea ng-model="vm.doctor.hospitalAddress" class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Recommendations</label>
+                <input type="text" ng-model="vm.doctor.recomentations" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+        </div>
+        <div>
+            <div class="wrapper">
+                <button type="button" class=" btn-md btn-warning cancelbtn">Cancel</button>
+                <button type="button" ng-click="vm.fnSaveDoctor(vm.doctor)" class=" btn-md signupbtn">Add Doctor</button>
+
+            </div>
+
+        </div>
+    </div>
+
+</form>
+<pre>{{doctor | json}}</pre>
+
+<!--doc_name: String, info: String, active: Boolean, doc_logo: String, link: String, qualification: String, gender: String, spec_name_doc: String, location: String, experience: String, hospital: String, recomentations: String-->

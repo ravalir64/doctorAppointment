@@ -1,0 +1,37 @@
+<!--<h1 style="border :1px solid blue ; margin:10px;">{{vm.doctorDetails.doc_name}} </h1>-->
+<div class="doctorcomponent col-md-12">
+    <div class="row">
+        <div class="col-md-2">
+            <img class="img-circle" ng-src="{{vm.doctorDetails.doc_logo}}" alt="Smiley face" height=" 105" width="105">
+        </div>
+        <div class="col-md-5">
+            <ul class="doc-name">
+                <li>
+                    <h3 class="doc">{{vm.doctorDetails.doc_name}}</h3>
+                </li>
+                <li>{{vm.doctorDetails.spec_name_doc}}</li>
+                <li style="opacity:0.6">{{vm.doctorDetails.qualification}}</li>
+            </ul>
+        </div>
+        <div class="col-md-5 details">
+            <ul class="doc-name">
+                <li><span class="fa fa-map-marker text-left "></span>{{vm.doctorDetails.location}} </li>
+                <li><span class="fa fa-medkit "></span>{{vm.doctorDetails.experience}} </li>
+                <li><span class="fa fa-hospital-o "></span>{{vm.doctorDetails.hospital}} </li>
+                <li><span class="fa fa-thumbs-up "></span>{{vm.doctorDetails.recomentations}} </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-center" style="border: 1px solid #ccc;">
+            <h4><span class="fa fa-question-circle-o"></span>Ask a Doctor</h4>
+        </div>
+        <div class="col-md-4 text-center" style="border: 1px solid #ccc;">
+            <h4 ng-click=" vm.fnDoctorDetailList(vm.doctorDetails._id)"><span class="fa fa-external-link"></span>view profile</h4>
+        </div>
+        <div class="col-md-4 text-center" style="border: 1px solid #ccc">
+            <h4><span class="fa fa-phone"></span>call for appointment</h4>
+        </div>
+    </div>
+</div>

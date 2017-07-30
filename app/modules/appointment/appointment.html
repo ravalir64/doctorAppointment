@@ -1,0 +1,190 @@
+<div class="row appointment-view">
+    <div class="bg-img-sec">
+        <h1 class="main-title">Never Wait In A Queue!</h1>
+        <h3 class="Sub-title text-center">Book appointments & Get live availability of popular doctors.</h3>
+        <form class="form-inline col-md-12">
+            <div class="form-group col-md-3 ">
+                <select class="form-control selection " name="AppointmentType" ng-model="data.AppointmentType" style="width:62%; margin-left:143px; height:50px;">
+                     <option value="Doctor" selected>Doctor</option>
+                     <option value="Hospital">Hospital</option>
+                     <option value="FitnessCenter">Fitness Center</option>
+                </select></div>
+            <div class="form-group col-md-4 ">
+                <select class="form-control selection " name="FilterType " ng-model="data.FilterType " style="width:107%; height:50px;" ng-options="speciality.value for speciality in  vm.specialities track by speciality.id"></select>
+            </div>
+            <div class="form-group col-md-4 ">
+                <select class="form-control selection " name="Location " ng-model="data.Location " style="width:46%; height:50px;" ng-options="country.name for country in  vm.countries track by country.code"></select>
+            </div>
+            <div class="form-group col-md-1 ">
+                <div class="home-square text-center" ng-click="vm.fnSearchList(data)">
+                    <i class="fa fa-search "></i>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="row section1 ">
+        <h1 class="text-center ">Know your Doctor before you Schedule an Appointment</h1>
+        <h4 class="text-center ">Research and choose the right doctor and the right hospital to get the right care. </h4>
+    </div>
+    <div class="row section2 ">
+        <div class="col-md-3 col-md-offset-1 ">
+            <div class="home-circle text-center ">
+                <i class="fa fa-user-md "></i>
+            </div>
+            <h2 class="text-center ">Right Doctor</h2>
+            <h4 class="text-center ">Sehat lets you search by medical condition or procedure to find a doctor experienced in your treatment.</h4>
+            <button class="btn btn-primary custom-btn ">Find the Right Doctor</button>
+        </div>
+        <div class="col-md-3 ">
+            <div class="home-circle text-center ">
+                <i class="fa fa-hospital-o "></i>
+            </div>
+            <h2 class="text-center ">Right Hospital</h2>
+            <h4 class="text-center ">Find a hospital that delivers significantly better care than others when it comes to your specific condition or procedure.</h4>
+            <button class="btn btn-primary custom-btn ">Find the Right Hospital</button>
+        </div>
+        <div class="col-md-3 ">
+            <div class="home-circle text-center ">
+                <i class="fa fa-medkit "></i>
+            </div>
+            <h2 class="text-center ">Right Care</h2>
+            <h4 class="text-center ">It’s also important to be an informed patient. Use our 'Ask a Doctor' feature to get medical advice.</h4>
+            <button class="btn btn-primary custom-btn ">Find the Right Care</button>
+        </div>
+    </div>
+    <div class="container-fuild ">
+        <div class="row section3 ">
+            <h1 class="text-center ">Find Specialists in</h1>
+            <div class="col-md-4 ">
+                <h3>Search by Speciality</h3>
+                <ul>Cardiology</ul>
+                <ul>Dermatology (Skin)</ul>
+                <ul>ENT (Otolaryngology)</ul>
+                <ul>Nephrology</ul>
+                <ul>Neurology</ul>
+                <ul>Obstetrics and Gynecology</ul>
+                <ul>Oncology</ul>
+                <ul>Orthopedic Surgery</ul>
+                <ul>Pediatrics</ul>
+                <ul>Radiology</ul>
+            </div>
+            <div class="col-md-4 ">
+                <h3>Search by Procedure</h3>
+                <ul>C-Section</ul>
+                <ul>Chemotherapy</ul>
+                <ul>Colonoscopy</ul>
+                <ul>Coronary Artery Bypass Graft Surgery</ul>
+                <ul>Hemodialysis</ul>
+                <ul>Prostate Surgery</ul>
+                <ul>Total Hip Replacement</ul>
+                <ul>Total Knee Replacement</ul>
+                <ul>Upper GI Endoscopy</ul>
+                <ul>Radiology</ul>
+            </div>
+            <div class="col-md-4 ">
+                <h3>Search by Condition</h3>
+                <ul>Abdominal Pain</ul>
+                <ul>Cancer</ul>
+                <ul>Depression</ul>
+                <ul>Diabetes</ul>
+                <ul>Heart Disease</ul>
+                <ul>Kidney Disease</ul>
+                <ul>Pregnancy</ul>
+                <ul>Stroke</ul>
+                <ul>Thyroid Disease</ul>
+                <ul>Urinary Tract Infection (UTI)</ul>
+            </div>
+        </div>
+    </div>
+    <div class="section4 row ">
+        <h1 class="text-center ">Ask a Doctor</h1>
+        <h3 class="text-center ">Get an answer immediately from board certified doctors.</h3>
+        <div class="col-md-6 col-md-offset-2 ">
+            <textarea rows="5 " cols="100 " class="field " placeholder="Type your detailed question... "></textarea>
+            <div>
+                <button class="btn btn-success btn-lg getbutton "> Get Answer </button>
+                <h5 class="text "> Private, secure and 100% trusted </h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="row section5 ">
+        <h1 class="text-center "> Health Articles </h1>
+        <div class="col-md-4 ">
+            <img src="images/img1.jpg ">
+            <h4>Best Heart Hospitals in Hyderabad</h4>
+        </div>
+        <div class=" col-md-4 ">
+            <img src="images/img2.jpg " alt=" ">
+            <h4>Effective ways of removing plastic from your life</h4>
+        </div>
+        <div class=" col-md-4 ">
+            <img src="images/img3.jpg " alt=" ">
+            <h4>Teff Grain- The New Superfood And How best to have it</h4>
+        </div>
+        <div class="col-md-4 ">
+            <img src="images/img4.jpg " alt=" ">
+            <h4>Know all about nosocomial infection to protect your body and healthcare unit from such infection</h4>
+        </div>
+        <div class=" col-md-4 ">
+            <img src="images/img5.jpg " alt=" ">
+            <h4>Including pumpkin seeds in diet for innumerable health benefits it offers</h4>
+        </div>
+        <div class=" col-md-4 ">
+            <img src="images/img6.jpg " alt=" ">
+            <h4>Fish oil supplements – complete information about their rancidity, longevity etc</h4>
+        </div>
+    </div>
+    <div class="footer row ">
+        <div class="col-md-2 col-md-offset-1 ">
+            <h5>Sehat</h5>
+            <ul class="list ">
+                <li><a href=" ">About Us </a> </li>
+                <li><a href=" ">Contact Us </a> </li>
+                <li><a href=" ">Advertise with us </a> </li>
+                <li><a href=" ">Careers </a> </li>
+                <li><a href=" ">Privacy Policy </a> </li>
+                <li><a href=" ">Terms and Conditions </a> </li>
+            </ul>
+        </div>
+        <div class="col-md-2 ">
+            <h5>Contribute</h5>
+            <ul class="list ">
+                <li><a href=" ">Add Hospital</a> </li>
+                <li><a href=" ">Add Doctor</a> </li>
+                <li><a href=" ">Add Article</a> </li>
+                <li><a href=" ">Add Fitness Centre</a> </li>
+            </ul>
+        </div>
+        <div class="col-md-2 ">
+            <h5>Services</h5>
+            <ul class="list ">
+                <li><a href=" ">Ask a Doctor </a> </li>
+                <li><a href=" ">Hospital Reviews </a> </li>
+                <li><a href=" ">Health Articles </a> </li>
+            </ul>
+        </div>
+        <div class="col-md-2 ">
+            <h5>Doctor By City</h5>
+            <ul class="list ">
+                <li><a href=" ">Doctors in Delhi</a> </li>
+                <li><a href=" ">Doctors in Mumbai</a> </li>
+                <li><a href=" ">Doctors in Chennai</a> </li>
+                <li><a href=" ">Doctors in Hyderabad</a> </li>
+                <li><a href=" ">Doctors in Bangalore</a> </li>
+            </ul>
+        </div>
+        <div class="col-md-2 ">
+            <h5>Hospitals By City</h5>
+            <ul class="list ">
+                <li><a href=" ">Hospitals in Delhi</a> </li>
+                <li><a href=" ">Hospitals in Mumbai</a> </li>
+                <li><a href=" ">Hospitals in Chennai</a> </li>
+                <li><a href=" ">Hospitals in Hyderabad</a> </li>
+                <li><a href=" ">Hospitals in Bangalore</a> </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

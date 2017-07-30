@@ -1,0 +1,416 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    padding: 0;
+    background-color: #f0f5f7;
+    .navigation {
+        background-color: #8FB512;
+    }
+    .navbar-default .navbar-brand {
+        color: #fff;
+        &:hover,
+        &:focus &:active {
+            background-color: #fff;
+            color: #8FB512;
+        }
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+        &:hover,
+        &:focus &:active {
+            background-color: #fff;
+            color: #8FB512;
+        }
+    }
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Custom page header */
+
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+
+/* Custom page footer */
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow>hr {
+    margin: 30px 0;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+
+/* Supporting marketing content */
+
+.marketing {
+    margin: 40px 0;
+    p+h4 {
+        margin-top: 28px;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+.activeLink {
+    background: #ddd;
+}
+
+.appointment-view {
+    .bg-img-sec {
+        background-image: url('../images/m9.jpg');
+        min-height: 500px;
+        color: #fff;
+        margin-bottom: 60px;
+        background-repeat: no-repeat;
+        background-size: 1375px 500px;
+        .main-title {
+            text-align: center;
+            padding-top: 10%;
+            font-weight: 500;
+        }
+        .h1 {
+            font-weight: bold;
+        }
+        .h3 {
+            font-weight: bold;
+        }
+        a {
+            color: #fff;
+        }
+    }
+    .section2 {
+        .col-md-3 {
+            background-color: #fff;
+            margin-right: 60px;
+            min-height: 400px;
+            .custom-btn {
+                margin: 23px 12px;
+                width: 90%;
+                background-color: #8FB512;
+                border-color: #8FB512;
+            }
+        }
+    }
+    .section3 {
+        background-color: #fff;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 89px;
+        padding-bottom: 140px;
+        min-height: 300px;
+        margin-top: 20px;
+        h1 {
+            padding-bottom: 17px;
+        }
+        .col-md-4 {
+            width: 33.3333333333%;
+            padding-left: 98px;
+        }
+        h3 {
+            font-size: 24px;
+            padding-left: 39px;
+        }
+    }
+    .home-circle {
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 50px !important;
+        -moz-border-radius: 50px !important;
+        border-radius: 50px !important;
+        background: #8FB512;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 16px;
+        .fa {
+            font-size: 79px;
+            color: #fff;
+            padding-top: 9px;
+        }
+    }
+    .section4 {
+        .div {
+            margin-bottom: 30px;
+        }
+        .btn-lg .btn-group-lg .btn.getbutton {
+            font-size: 18px;
+            line-height: 1.3333333;
+        }
+        .btn-success {
+            color: #fff;
+            background-color: #8FB512;
+            border-color: #8FB512;
+            margin-left: 255px;
+            border-radius: 0px;
+            padding: 10px 112px;
+            margin-top: 30px;
+        }
+        h5 {
+            padding-bottom: 80px;
+        }
+        .field {
+            margin-left: 74px;
+        }
+        h3 {
+            padding-bottom: 20px;
+        }
+        h1 {
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+        .text {
+            padding-left: 301px;
+        }
+    }
+    .section1 {
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .section5 {
+        background-color: #fff;
+        padding-left: 90px;
+        h1 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .col-md-4 {
+            padding-left: 2px;
+        }
+    }
+    .footer {
+        background: #3b4349;
+        ul {
+            list-style-type: none;
+            padding-left: 0px;
+            padding-bottom: 40px;
+            color: #fff;
+        }
+        a {
+            color: #fff;
+        }
+    }
+    .home-square {
+        width: 50px;
+        height: 48px;
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        border-radius: 0px !important;
+        background: #fff;
+        margin-left: -248px;
+        margin-top: 1px;
+        margin-right: 33px;
+        .fa {
+            font-size: 35px;
+            color: #8FB512;
+            margin-top: 8px;
+        }
+    }
+}
+
+// doctor component css starting------
+.padding-zero {
+    padding: 0px;
+}
+
+.doc-list {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+    padding: 0px;
+    background: #fff;
+}
+
+.doctorcomponent {
+    ul {
+        list-style-type: none;
+    }
+    .doc {
+        margin-top: 2px;
+    }
+    .doc-name {
+        padding-left: 0px;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    .details {
+        ul {
+            padding-top: 25px;
+            padding-bottom: 20px;
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.mainlist-view {
+    margin-top: 23px;
+}
+
+// doctor component css ending------
+.unordered ul {
+    list-style-type: none;
+}
+
+.border-shadow {
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    background: #fff;
+}
+
+// -------
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #8FB512;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212 ";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+// ----------
+.outerdiv {
+    .tick {
+        ul {
+            list-style: none;
+        }
+        ul li:before {
+            content: "\2714";
+            color: #8FB512;
+            font-size: 25px;
+        }
+    }
+    button {
+        color: #fff;
+        background-color: #8FB512;
+        border-color: #8FB512;
+        border-radius: 0px;
+    }
+    .button1:hover {
+        background-color: #8FB512;
+        color: #8FB512;
+    }
+}
+
+.buttonsec {
+    text-align: center;
+    button {
+        margin-right: 70px;
+    }
+}
+
+.DoctorNewForm {
+    width: 400px;
+    .wrapper {
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        top: 87%;
+        left: 39%;
+    }
+    button {
+        color: #fff;
+        background-color: #8FB512;
+        border-color: #8FB512;
+        border-radius: 0px;
+        width: 200px;
+        height: 45px;
+    }
+}
